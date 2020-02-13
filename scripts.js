@@ -78,7 +78,8 @@ function playRound(playerSelection, computerSelection) {
         results.textContent = '';
         newGameButton.classList.toggle('hidden');
         document.querySelector('#para').classList.toggle('hidden');
-        
+        gameOverMessageContainer.appendChild(gameOverMessage);
+        gameOverMessageContainer.appendChild(newGameButton);
     }
 }
 
@@ -111,7 +112,7 @@ scoreContainer.appendChild(playerScore);
 let pcScoreContainer = document.querySelector('#score2');
 let pcScore = document.createElement('div');
 pcScore.textContent = '';
-pcScore.style.display = 'relative';
+pcScore.style.position = 'relative';
 pcScoreContainer.appendChild(pcScore);
 
 let gameOverMessageContainer = document.querySelector('#gameOverMessageContainer');
@@ -137,4 +138,6 @@ newGameButton.addEventListener('click', () => {
     buttons.classList.toggle('hidden');
     gameOverMessage.classList.toggle('hidden');
     document.querySelector('#para').classList.toggle('hidden');
+    gameOverMessageContainer.removeChild(newGameButton);
+    gameOverMessageContainer.removeChild(gameOverMessage);
 })
