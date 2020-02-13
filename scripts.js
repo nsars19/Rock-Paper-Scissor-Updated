@@ -64,7 +64,7 @@ function playRound(playerSelection, computerSelection) {
         } else if (results.textContent = resultText[5]) {
             pcScore.textContent++;
         } else if (results.textContent = resultText[6]) {
-            pcScore.textContent = playerScore.textContent;
+            pcScore.textContent = pcScore.textContent;
         } else {
             pcScore.textContent = '';
         }
