@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    box-shadow: 3px 2px 3px 2px;
+}
+p {
+    text-align: center;
+    font-size: large;
+}
+.buttons {
+    display: block;
+    position: relative;
+    padding: 9px;
+    text-align: center;
+}
+.hidden {
+    visibility: hidden;
+}
+#gameOverMessageContainer {
+    display: block;
+    position: relative;
+    text-align: center;
+}
